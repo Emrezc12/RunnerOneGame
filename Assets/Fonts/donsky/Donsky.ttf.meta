@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3c4cc36e151ed4b3e95adedc001d271a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Donsky
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 790a19b85bfec49a88d2f945a288fdb9, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
