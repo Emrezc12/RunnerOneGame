@@ -141,9 +141,10 @@ private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         if (hit.transform.tag=="obstacle")
         {
-            source.Play();
-            PlayerManager.gameover = true;
             
+            PlayerManager.gameover = true;
+            source.Play();
+
         }
         if (hit.transform.tag=="finish")
         {
