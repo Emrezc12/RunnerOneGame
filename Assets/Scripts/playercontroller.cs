@@ -68,18 +68,7 @@ public class playercontroller : MonoBehaviour
             }
         }
 
-        if (controller.isGrounded)
-        {
-            direction.y = -1;
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                Jump();
-            }
-        }
-        else
-        {
-            direction.y += gravity * Time.deltaTime;
-        }
+       
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             desiredline--;
@@ -114,6 +103,18 @@ public class playercontroller : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (controller.isGrounded)
+        {
+            direction.y = -1;
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                Jump();
+            }
+        }
+        else
+        {
+            direction.y += gravity * Time.deltaTime;
+        } 
         if (!PlayerManager.isGameStarted)
             return;
         controller.Move(direction * Time.fixedDeltaTime);
