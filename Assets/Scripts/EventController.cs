@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class EventController : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        
+     
     }
 
     // Update is called once per frame
@@ -48,10 +49,18 @@ public class EventController : MonoBehaviour
     }
     public void Play()
     {
+        anim.SetTrigger("goo");
+        Invoke("LoadScene", 1.1f);
+        
+    }
+    void LoadScene()
+    {
         SceneManager.LoadScene(1);
     }
+    
     public void quit()
     {
+        
         Application.Quit();
     }
 }
